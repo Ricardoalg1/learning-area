@@ -26,6 +26,10 @@ body {
 
 /* header  */
 
+h1 {
+  color: #93c501;
+}
+
 .topDocument {
   width: 800px;
   background-image: linear-gradient(
@@ -139,7 +143,7 @@ footer img {
 footer p {
   font-size: small;
   text-align: center;
-  color:darkgray
+  color: darkgray;
 }
 
 .bottomDocument {

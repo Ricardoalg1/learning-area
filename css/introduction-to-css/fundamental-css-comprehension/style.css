@@ -10,6 +10,27 @@ html {
   background-color: #ccc;
 }
 
+/* Main Content */
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: rgba(41, 222, 222, 0.556);
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+.card h2,
+.card p {
+  margin: 0;
+}
+/* header and footer  */
+.card header,
+.card footer {
+  padding: 1em;
+  height: 3em;
+}
+
 /* headers */
 .card header {
   background-image: linear-gradient(
@@ -20,31 +41,26 @@ html {
   border-radius: 1.5em 1.5em 0 0;
 }
 /* Main Content */
-article {
+.card article {
   height: 12em;
   background-color: rgba(0, 0, 0, 0.3);
 }
-h2 {
-  font-size: 2em;
-  line-height: 1.5em;
+.card header h2 {
+  font-size: 1.5em;
+  line-height: 2em;
 }
+
 p {
   font-size: 1.4em;
 }
-.card {
-  width: 35em;
-  height: 24em;
-  margin: 5em auto;
-  background-color: rgba(41, 222, 222, 0.556);
-  border: 0.2em solid black;
-  border-radius: 1.5em;
-}
+
 .card article img {
   max-height: 100%;
   float: right;
 }
-article p {
-  padding: 0.6em;
+.card article p {
+  font-size: 1.3em;
+  padding: 1em;
   color: whitesmoke;
 }
 
@@ -58,12 +74,8 @@ article p {
   border-radius: 0 0 1.5em 1.5em;
 }
 
-footer p {
+.card footer p {
   color: white;
   font-size: 1.5em;
   line-height: 1.5em;
-}
-.decorate {
-  padding: 1em;
-  height: 3.3em;
 }

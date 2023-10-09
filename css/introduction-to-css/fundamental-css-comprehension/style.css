@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+
 }
 
 html {
@@ -12,7 +13,7 @@ html {
 
 /* Main Content */
 .card {
-  width: 35em;
+  zth: 35em;
   height: 22em;
   margin: 5em auto;
   background-color: rgba(41, 222, 222, 0.556);

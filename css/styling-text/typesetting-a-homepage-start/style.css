@@ -1,45 +1,141 @@
 /* General setup */
-
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
+  max-width: 800px;
+  padding: 2em;
 }
 
 /* Layout */
 
-section {
+.logo img {
   float: left;
-  width: 50%;
+}
+
+section {
+  min-width: 60%;
+  margin-top: 1em;
+  float: left;
+  width: 60%;
+  padding: 20px;
 }
 
 aside {
+  margin-top: 2em;
   float: left;
-  width: 30%;
+  width: 20%;
 }
 
 nav {
+  margin-top: 1em;
   float: left;
   width: 20%;
+  font-size: 1em;
 }
 
 footer {
   clear: both;
 }
 
-header, section, aside, nav, footer {
-  padding: 20px;
+section ul {
+  padding-left: 2em;
 }
 
 /* header and footer */
 
-header, footer {
+header {
   border-top: 5px solid #a66;
+  width: fit-content;
+}
+
+header h1 {
+  text-align: center;
+  margin-left: 0.5em;
+  margin-top: 1.3em;
+}
+
+header::before {
+  content: url("top-image.png");
+  max-width: 100%;
+}
+
+header img {
+  margin-top: -5.5em;
+  max-width: 100%;
+  float: left;
+  margin-right: 1em;
+}
+
+header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.218),
+    rgba(0, 0, 0, 0)
+  );
+  height: 10em;
+  margin-bottom: 2em;
+}
+/* footer */
+
+footer {
   border-bottom: 5px solid #a66;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
+footer img {
+  max-width: 100%;
+}
+
+footer {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.086)
+  );
+}
+
+/* Aside*/
+
+aside ul li {
+  list-style: none;
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+aside li::before {
+  content: "📰";
+  display: inline;
+}
+
+/*Nav*/
+
+nav li {
+  list-style: none;
+  margin: 2em;
+}
+
+nav li a {
+  background-color: rgba(198, 95, 95, 0.887);
+  margin: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: wheat;
+  border-radius: 6px;
+}
+
+nav li a:hover {
+  background-color: rgba(198, 95, 95, 0.707);
+  color: white;
+  box-shadow: darkgray 2px 2px 2px;
+}

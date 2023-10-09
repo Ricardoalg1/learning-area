@@ -16,93 +16,60 @@ body {
 }
 
 /* Layout */
-
-.logo img {
-  float: left;
-}
-
-section {
-  min-width: 60%;
-  margin-top: 1em;
-  float: left;
-  width: 60%;
-  padding: 20px;
-}
-
-aside {
-  margin-top: 2em;
-  float: left;
-  width: 20%;
-}
-
-nav {
-  margin-top: 1em;
-  float: left;
-  width: 20%;
-  font-size: 1em;
-}
-
-footer {
-  clear: both;
-}
-
-section ul {
-  padding-left: 2em;
-}
-
-/* header and footer */
-
-header {
-  border-top: 5px solid #a66;
-  width: fit-content;
-}
-
-header h1 {
-  text-align: center;
-  margin-left: 0.5em;
-  margin-top: 1.3em;
-}
-
-header::before {
-  content: url("top-image.png");
-  max-width: 100%;
-}
-
-header img {
-  margin-top: -5.5em;
+.logo {
+  padding: 2em;
+  margin-top: -11em;
   max-width: 100%;
   float: left;
   margin-right: 1em;
 }
 
-header {
+/* header  */
+
+.topDocument {
+  width: 800px;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.218),
     rgba(0, 0, 0, 0)
   );
   height: 10em;
-  margin-bottom: 2em;
-}
-/* footer */
-
-footer {
-  border-bottom: 5px solid #a66;
+  margin-bottom: 1em;
 }
 
-footer img {
-  max-width: 100%;
+header {
+  margin-top: 4em;
+  border-top: 5px solid #a66;
+  width: 800px;
 }
 
-footer {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.086)
-  );
+header h1 {
+  text-align: center;
 }
 
-/* Aside*/
+/*Section */
+section {
+  min-width: 60%;
+  float: left;
+  width: 60%;
+  padding: 1em;
+}
+
+h2 {
+  color: #a66;
+}
+
+section ul li {
+  list-style: none;
+}
+
+section ul li::before {
+  list-style: none;
+  content: "✔️";
+  color: #a66;
+}
+
+/* Aside */
 
 aside ul li {
   list-style: none;
@@ -115,7 +82,16 @@ a {
 
 aside li::before {
   content: "📰";
-  display: inline;
+}
+
+aside {
+  margin-top: 2em;
+  float: left;
+  width: 20%;
+}
+
+section ul {
+  padding-left: 2em;
 }
 
 /*Nav*/
@@ -123,6 +99,13 @@ aside li::before {
 nav li {
   list-style: none;
   margin: 2em;
+}
+
+nav {
+  margin-top: 1em;
+  float: left;
+  width: 20%;
+  font-size: 1em;
 }
 
 nav li a {
@@ -138,4 +121,33 @@ nav li a:hover {
   background-color: rgba(198, 95, 95, 0.707);
   color: white;
   box-shadow: darkgray 2px 2px 2px;
+}
+
+/* footer */
+
+footer {
+  clear: both;
+  width: 800px;
+  border-bottom: 5px solid #a66;
+  margin-bottom: 1em;
+}
+
+footer img {
+  max-width: 100%;
+}
+
+footer p {
+  font-size: small;
+  text-align: center;
+  color:darkgray
+}
+
+.bottomDocument {
+  width: 800px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(17, 17, 17, 0.567)
+  );
+  height: 8.9em;
 }

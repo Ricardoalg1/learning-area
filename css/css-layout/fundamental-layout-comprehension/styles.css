@@ -1,51 +1,85 @@
 body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
 
-  img {
-      max-width: 100%;
-      display: block;
-  }
-  
-  .logo {
-    font-size: 200%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
-  }
-  
-  .grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-  }
-  
-  nav {
-    background-color: #000;
-    padding: .5em;
-  }
-  
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+}
+
+nav {
+  background-color: #626262;
+  padding: 0.5em;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li:hover {
+  background-color: rgb(7, 250, 250);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  width: 200px;
+}
+/* My styles */
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  flex: 1;
+}
+
+article img {
+  float: left;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 40em) {
   nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
+  nav ul li {
+    padding: 0.2em;
+    border: solid 1px rgb(59, 59, 56);
+    background-color: rgb(140, 234, 234);
+    margin-top: 1em auto;
   }
-  
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .feature {
-      width: 200px;
-  }
+}

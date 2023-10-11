@@ -3,3 +3,28 @@ html {
 }
 
 /* Your CSS below here */
+
+div {
+  margin:auto;
+  height: 200px;
+  width: 200px;
+  line-height: 9;
+  font-size: 1.1rem;
+  text-align: center;
+  color: lightgoldenrodyellow;
+  text-shadow: 1px 1px 2px black;
+  border-radius: 10px;
+  border: solid 1px rgb(15, 61, 98);
+  background: linear-gradient(
+    to right bottom,
+    transparent,
+    rgba(0, 0, 0, 0.483) 30%
+  );
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.344),
+  inset 0 -1em 1em rgba(247, 247, 247, 0.311),
+   0 0 0 2px white
+  
+}
+div {
+  background-color: steelblue;
+}

@@ -136,6 +136,25 @@ article img {
 }
 
 @media screen and (min-width: 50em) {
+
+  .slider {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6ca7c9;
+  flex-direction: row;
+}
+
+.slider h1 {
+  margin-right: 6em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: (100 rem + 10vw);
+  color: whitesmoke;
+  /* TODO: text-shadow: #223844; */
+}
+
   .wrapper {
     background-color: linear-gradient(to top, #6ca7c9, #0b5987);
     display: flex;
